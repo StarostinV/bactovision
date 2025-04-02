@@ -6,27 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://StarostinV.github.io/bactovision/contributing/</loc>
-         <lastmod>2025-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://StarostinV.github.io/bactovision/examples/</loc>
-         <lastmod>2025-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://StarostinV.github.io/bactovision/installation/</loc>
-         <lastmod>2025-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://StarostinV.github.io/bactovision/api/</loc>
-         <lastmod>2025-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://StarostinV.github.io/bactovision/api/bacto-widget/</loc>
          <lastmod>2025-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -42,11 +22,6 @@
     </url>
     <url>
          <loc>https://StarostinV.github.io/bactovision/user-guide/basic-usage/</loc>
-         <lastmod>2025-04-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://StarostinV.github.io/bactovision/user-guide/grid/</loc>
          <lastmod>2025-04-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
