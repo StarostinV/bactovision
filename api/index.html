@@ -12,13 +12,9 @@
         <meta name="author" content="Vladimir Starostin">
       
       
-        <link rel="canonical" href="https://StarostinV.github.io/bactovision/installation/">
+        <link rel="canonical" href="https://StarostinV.github.io/bactovision/api/">
       
       
-        <link rel="prev" href="..">
-      
-      
-        <link rel="next" href="../user-guide/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -26,7 +22,7 @@
     
     
       
-        <title>Installation - BactoVision</title>
+        <title>API Reference - BactoVision</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation-guide" class="md-skip">
+        <a href="#api-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              API Reference
             
           </span>
         </div>
@@ -279,30 +275,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Installation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -311,143 +287,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation Methods
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation Methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#standard-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Standard Installation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installation-from-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installation from Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dependencies
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verifying-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verifying Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#missing-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Missing Dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#jupyterlab-extension-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      JupyterLab Extension Issues
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Help
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -585,37 +424,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#package-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Package Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-methods" class="md-nav__link">
+  <a href="#core-classes-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation Methods
+      Core Classes Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation Methods">
+    <nav class="md-nav" aria-label="Core Classes Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#standard-installation" class="md-nav__link">
+  <a href="#bactowidget" class="md-nav__link">
     <span class="md-ellipsis">
-      Standard Installation
+      BactoWidget
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-from-source" class="md-nav__link">
+  <a href="#canvaswidget" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation from Source
+      CanvasWidget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-processing-utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Processing Utilities
     </span>
   </a>
   
@@ -627,77 +475,20 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dependencies" class="md-nav__link">
+  <a href="#detailed-api-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Dependencies
+      Detailed API Documentation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verifying-installation" class="md-nav__link">
+  <a href="#usage-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Verifying Installation
+      Usage Examples
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Issues
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#missing-dependencies" class="md-nav__link">
-    <span class="md-ellipsis">
-      Missing Dependencies
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#jupyterlab-extension-issues" class="md-nav__link">
-    <span class="md-ellipsis">
-      JupyterLab Extension Issues
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Help
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -719,56 +510,62 @@
   
 
 
-<h1 id="installation-guide">Installation Guide</h1>
-<p>BactoVision is designed to work within Jupyter notebooks and can be installed via pip. The package is compatible with Python 3.7+ and includes all necessary dependencies.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Before installing BactoVision, ensure you have Python 3.7 or higher.</p>
-<h2 id="installation-methods">Installation Methods</h2>
-<h3 id="standard-installation">Standard Installation</h3>
-<p>The easiest way to install BactoVision is using pip:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>bactovision
-</code></pre></div>
-<p>This will install BactoVision along with all its dependencies.</p>
-<h3 id="installation-from-source">Installation from Source</h3>
-<p>For the latest development version or to contribute to the project, you can install from source:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mlcolab/bactovision.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>bactovision
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pip<span class="w"> </span>install<span class="w"> </span>.
-</code></pre></div>
-<h2 id="dependencies">Dependencies</h2>
-<p>BactoVision has the following dependencies, which will be automatically installed with pip:</p>
+<h1 id="api-reference">API Reference</h1>
+<p>This section provides detailed documentation for BactoVision's API. It covers the main classes and functions that you can use programmatically.</p>
+<h2 id="package-structure">Package Structure</h2>
+<p>BactoVision consists of several main components:</p>
 <ul>
-<li>numpy</li>
-<li>scipy</li>
-<li>scikit-image</li>
-<li>Pillow</li>
-<li>opencv-python</li>
-<li>anywidget</li>
-<li>traitlets</li>
-<li>matplotlib</li>
-<li>jupyterlab</li>
+<li><strong>BactoWidget</strong> (<code>bactovision.widget.BactoWidget</code>) - The main widget class</li>
+<li><strong>CanvasWidget</strong> (<code>bactovision.canvas_widget.CanvasWidget</code>) - The underlying canvas implementation</li>
+<li><strong>Image Processing</strong> (<code>bactovision.image_processing</code>) - Image processing utilities</li>
 </ul>
-<h2 id="verifying-installation">Verifying Installation</h2>
-<p>To verify that BactoVision is installed correctly, open a Jupyter notebook and run:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">bactovision.widget</span> <span class="kn">import</span> <span class="n">BactoWidget</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">BactoWidget</span><span class="p">)</span>
+<h2 id="core-classes-overview">Core Classes Overview</h2>
+<h3 id="bactowidget">BactoWidget</h3>
+<p>The main user-facing class that integrates all components:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">bactovision.widget</span> <span class="kn">import</span> <span class="n">BactoWidget</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">widget</span> <span class="o">=</span> <span class="n">BactoWidget</span><span class="p">(</span><span class="s1">&#39;path/to/image.png&#39;</span><span class="p">)</span>
 </code></pre></div>
-<p>If the installation was successful, this should print the widget class information without any errors.</p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="common-issues">Common Issues</h3>
-<h4 id="missing-dependencies">Missing Dependencies</h4>
-<p>If you encounter errors about missing dependencies, try reinstalling with:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>bactovision<span class="w"> </span>--force-reinstall
+<p>This class provides:</p>
+<ul>
+<li>Image loading and display</li>
+<li>UI controls for annotation</li>
+<li>Grid configuration</li>
+<li>Metrics extraction</li>
+</ul>
+<h3 id="canvaswidget">CanvasWidget</h3>
+<p>The lower-level widget that handles the canvas rendering and interactions:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">bactovision.canvas_widget</span> <span class="kn">import</span> <span class="n">CanvasWidget</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">canvas</span> <span class="o">=</span> <span class="n">CanvasWidget</span><span class="p">()</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">canvas</span><span class="o">.</span><span class="n">set_image</span><span class="p">(</span><span class="n">image_array</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="jupyterlab-extension-issues">JupyterLab Extension Issues</h4>
-<p>For JupyterLab users, if the widget doesn't display properly, ensure that the widget extension is installed:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>jupyter<span class="w"> </span>labextension<span class="w"> </span>list
+<p>This class provides:</p>
+<ul>
+<li>Image rendering</li>
+<li>Drawing capabilities</li>
+<li>Annotation storage</li>
+<li>Grid implementation</li>
+</ul>
+<h3 id="image-processing-utilities">Image Processing Utilities</h3>
+<p>A collection of functions for processing bacterial growth images:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">bactovision.image_processing</span> <span class="kn">import</span> <span class="n">segment_by_thresholding</span><span class="p">,</span> <span class="n">normalize_image</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Segment an image</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">image</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="n">segment_by_thresholding</span><span class="p">(</span><span class="n">image_array</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Normalize an image to [0,1] range</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">normalized_img</span> <span class="o">=</span> <span class="n">normalize_image</span><span class="p">(</span><span class="n">image_array</span><span class="p">)</span>
 </code></pre></div>
-<p>The output should include <code>anywidget</code> or similar entries. If not, you may need to run:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>jupyter<span class="w"> </span>labextension<span class="w"> </span>install<span class="w"> </span>@jupyter-widgets/jupyterlab-manager
-</code></pre></div>
-<h3 id="getting-help">Getting Help</h3>
-<p>If you experience any issues with installation, please <a href="https://github.com/mlcolab/bactovision/issues">open an issue</a> on our GitHub repository with details about the problem and your environment.</p>
+<h2 id="detailed-api-documentation">Detailed API Documentation</h2>
+<p>Each component has detailed documentation available:</p>
+<ul>
+<li><a href="bacto-widget/">BactoWidget</a> - Main widget documentation</li>
+<li><a href="canvas-widget.md">CanvasWidget</a> - Canvas functionality</li>
+<li><a href="image-processing.md">Image Processing</a> - Image processing functions</li>
+</ul>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>For example code showing how to use these APIs, see the <a href="../examples/">Examples</a> page. </p>
 
 
 
