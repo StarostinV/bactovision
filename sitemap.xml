@@ -1,3 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/installation/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/user-guide/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/user-guide/annotations/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/user-guide/basic-usage/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://StarostinV.github.io/bactovision/user-guide/widget-interface/</loc>
+         <lastmod>2025-04-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
