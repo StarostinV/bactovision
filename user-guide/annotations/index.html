@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://StarostinV.github.io/bactovision/user-guide/annotations/">
       
       
+        <link rel="prev" href="../grid/">
+      
+      
+        <link rel="next" href="../metrics/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Annotations - BactoVision</title>
+        <title>Annotation - BactoVision</title>
       
     
     
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Annotations
+              Annotation
             
           </span>
         </div>
@@ -295,6 +299,8 @@
       
   
   
+    
+  
   
   
     
@@ -308,16 +314,18 @@
       
         
       
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -339,7 +347,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             User Guide
@@ -376,11 +384,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../widget-interface/" class="md-nav__link">
+      <a href="../grid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Widget Interface
+    Grid
   </span>
   
 
@@ -390,25 +398,44 @@
 
               
             
-          </ul>
-        </nav>
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-    </li>
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Annotation
+  </span>
   
 
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Annotation
+  </span>
+  
+
+      </a>
+      
+        
 
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
@@ -422,6 +449,15 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tuning-image-before-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning Image Before Annotation
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#annotation-methods" class="md-nav__link">
@@ -517,19 +553,199 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#brush-controls" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combined-approach" class="md-nav__link">
     <span class="md-ellipsis">
-      Brush Controls
+      Combined Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-and-hiding-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing and Hiding Annotations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-annotation-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extracting Annotation Data
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fine-tuning-image-before-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fine-Tuning Image Before Annotation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotation-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotation Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatic Annotation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automatic Annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-manual-annotation" class="md-nav__link">
+  <a href="#configuring-automatic-annotation" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Manual Annotation
+      Configuring Automatic Annotation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Automatic Annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#brightness-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brightness Threshold
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smallest-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smallest Size
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-automatic-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Automatic Annotation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Annotation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annotation-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotation Modes
     </span>
   </a>
   
@@ -567,39 +783,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#advanced-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced Techniques
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced Techniques">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fine-tuning-image-before-annotation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Fine-Tuning Image Before Annotation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#handling-difficult-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      Handling Difficult Cases
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -619,7 +802,16 @@
 
 
 <h1 id="annotations">Annotations</h1>
-<p>This guide covers the annotation capabilities in BactoVision, which allow you to mark bacterial colonies and growth areas within your images.</p>
+<p>This guide covers the annotation capabilities in BactoVision, which allow you to mark bacterial colonies within your images.</p>
+<h3 id="fine-tuning-image-before-annotation">Fine-Tuning Image Before Annotation</h3>
+<p>For better annotation results, consider adjusting the image preprocessing integrated into the widget first:</p>
+<ol>
+<li>Enable Contrast Limited Adaptive Histogram Equalization (CLAHE) to enhance contrast</li>
+<li>Use background subtraction to remove uneven illumination</li>
+<li>Experiment with different colormaps for better visibility</li>
+</ol>
+<p><img align="center" alt="widget" src="../../images/widget-preprocessed.png" width="700" /></p>
+<p>Note that the preprocessing can help with the automatic annotation. However, it is not used for calculating the final metrics - only for the segmentation/annotation process.</p>
 <h2 id="annotation-methods">Annotation Methods</h2>
 <p>BactoVision offers two complementary annotation approaches:</p>
 <ol>
@@ -656,12 +848,9 @@
 <ol>
 <li>Adjust the threshold and size parameters</li>
 <li>Click the "Apply auto" button</li>
+<li>Repeat if needed</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Programmatic control</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">widget</span><span class="o">.</span><span class="n">threshold_slider</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mf">1.2</span>  <span class="c1"># Set brightness threshold</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">widget</span><span class="o">.</span><span class="n">small_object_size</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mf">0.8</span>  <span class="c1"># Set smallest object size</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">widget</span><span class="o">.</span><span class="n">apply_auto_annotation</span><span class="p">()</span>  <span class="c1"># Run automatic annotation</span>
-</code></pre></div>
+<p><img align="center" alt="widget" src="../../images/widget-autosegmentation.png" width="700" /></p>
 <h2 id="manual-annotation">Manual Annotation</h2>
 <p>Manual annotation allows you to directly draw or erase annotations for precise control.</p>
 <h3 id="annotation-modes">Annotation Modes</h3>
@@ -671,23 +860,8 @@
 <li><strong>Add</strong> - Enables drawing annotations</li>
 <li><strong>Erase</strong> - Enables erasing annotations</li>
 </ul>
-<h3 id="brush-controls">Brush Controls</h3>
-<p>The brush size can be adjusted using the slider:</p>
-<ul>
-<li>Larger brush sizes are useful for covering large areas quickly</li>
-<li>Smaller brush sizes provide fine-grained control for detailed work</li>
-</ul>
-<h3 id="using-manual-annotation">Using Manual Annotation</h3>
-<p>To manually annotate:</p>
-<ol>
-<li>Select either "Add" or "Erase" mode</li>
-<li>Adjust the brush size as needed</li>
-<li>Click and drag on the canvas to draw or erase</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Programmatic control</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">widget</span><span class="o">.</span><span class="n">draw_mode_btns</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;Add&#39;</span>  <span class="c1"># Set to drawing mode</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">widget</span><span class="o">.</span><span class="n">brush_size_slider</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># Set brush size</span>
-</code></pre></div>
+<p>The brush size can be adjusted using the corresponding slider.</p>
+<p><img align="center" alt="widget" src="../../images/widget-manual.png" width="700" /></p>
 <h2 id="combined-approach">Combined Approach</h2>
 <p>For best results, consider using a combined approach:</p>
 <ol>
@@ -697,44 +871,17 @@
 <li>Remove false positives</li>
 <li>Refine boundaries</li>
 </ol>
+<p>Note that automatic annotation applied at any stage will erase manual annotation.</p>
 <h2 id="viewing-and-hiding-annotations">Viewing and Hiding Annotations</h2>
 <p>You can toggle the visibility of annotations using the "Hide annotation" button. This is useful when you want to check the original image without annotations.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Hide annotations</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">widget</span><span class="o">.</span><span class="n">hide_annotation_btn</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Show annotations</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">widget</span><span class="o">.</span><span class="n">hide_annotation_btn</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">False</span>
-</code></pre></div>
 <h2 id="extracting-annotation-data">Extracting Annotation Data</h2>
 <p>After annotation, you can extract the annotation mask:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Get binary mask of annotations</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">mask</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">mask</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Analyze annotations per grid cell</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">get_metrics</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Get binary mask of annotations</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">mask</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">get_annotation_mask</span><span class="p">()</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Analyze annotations per grid cell</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">get_metrics</span><span class="p">()</span>
 </code></pre></div>
-<h2 id="advanced-techniques">Advanced Techniques</h2>
-<h3 id="fine-tuning-image-before-annotation">Fine-Tuning Image Before Annotation</h3>
-<p>For better annotation results, consider adjusting the image preprocessing:</p>
-<ol>
-<li>Enable CLAHE to enhance contrast</li>
-<li>Use background subtraction to remove uneven illumination</li>
-<li>Experiment with different colormaps for better visibility</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Enhance image for better annotation</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">widget</span><span class="o">.</span><span class="n">clahe_btn</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">widget</span><span class="o">.</span><span class="n">clahe_limit_slider</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="mi">200</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">widget</span><span class="o">.</span><span class="n">subtract_background_btn</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">widget</span><span class="o">.</span><span class="n">cmap_down</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;viridis&#39;</span>
-</code></pre></div>
-<h3 id="handling-difficult-cases">Handling Difficult Cases</h3>
-<p>For images with uneven backgrounds or complex growth patterns:</p>
-<ol>
-<li>Start with a more permissive automatic threshold</li>
-<li>Manually erase false positives</li>
-<li>Add missed colonies by hand</li>
-<li>Consider adjusting the grid to exclude problematic areas</li>
-</ol>
 
 
 

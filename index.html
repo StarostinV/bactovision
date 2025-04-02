@@ -386,6 +386,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -454,11 +458,53 @@
   
   
     <li class="md-nav__item">
-      <a href="user-guide/widget-interface/" class="md-nav__link">
+      <a href="user-guide/grid/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Widget Interface
+    Grid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-guide/annotations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annotation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-guide/metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metrics
   </span>
   
 
@@ -563,15 +609,15 @@
 <p><em>Tyrosine auxotrophy shapes Staphylococcus aureus nasal colonization and interactions with commensal communities</em> L. Camus et al. 2025 (submitted)</p>
 <h2 id="key-features">Key Features</h2>
 <ul>
-<li><strong>Jupyter integration</strong> - Annotate data directly in Jupyter notebook to enable flexiblility and integration with other methods</li>
-<li><strong>Interactive annotation</strong> - Combine automatic and manual annotation methods</li>
-<li><strong>Grid system</strong> - Analyze data in a structured grid format</li>
-<li><strong>Image enhancement</strong> - Apply CLAHE and other image processing techniques</li>
-<li><strong>Quantitative analysis</strong> - Extract metrics on bacterial growth</li>
-<li><strong>Intuitive interface</strong> - Simple and user-friendly design</li>
+<li><strong>Jupyter integration</strong> - Annotate data directly in Jupyter notebook to enable flexiblility and seamless integration with other python libraries.</li>
+<li><strong>Grid system</strong> - Analyze data in a structured grid format. Unlike other packages, BactoVision does not try to automatically infer the grid from the image, because it is generally an ill-posed task, especially if multiple colonies are not visible. Instead, a user can specify the grid once by manually dragging it in the widget. This this grid configuration can be then saved and reused on images with the same geometry. Grid config also ensures that the saved tables are compatible between different images.</li>
+<li><strong>Interactive annotation</strong> - Combine automatic and manual annotation methods. BactoVision provides a manual brush to add and erase parts of the annotation that were not processed correctly by automated tools.</li>
+<li><strong>Image enhancement</strong> - Apply CLAHE and other image processing techniques.</li>
+<li><strong>Quantitative analysis</strong> - Extract standardized metrics on bacterial growth.</li>
+<li><strong>Intuitive interface</strong> - Simple and user-friendly design.</li>
 </ul>
 <h2 id="quick-start">Quick Start</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bactovision</span><span class="w"> </span><span class="kn">import</span> <span class="n">BactoWidget</span>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">bactovision</span><span class="w"> </span><span class="kn">import</span> <span class="n">BactoWidget</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Create a widget with an image</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">widget</span> <span class="o">=</span> <span class="n">BactoWidget</span><span class="p">(</span><span class="s1">&#39;path/to/image.png&#39;</span><span class="p">)</span>
@@ -579,6 +625,7 @@
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Display the widget</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">widget</span>
 </code></pre></div>
+<img align="center" alt="widget" src="images/widget-cut.png" width="700" /></p>
 <p>To get the mask and the metrics after the annotation is completed, run:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">annotation_mask</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">get_annotation_mask</span><span class="p">()</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">metrics</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">get_metrics</span><span class="p">()</span>
